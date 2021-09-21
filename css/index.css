@@ -164,7 +164,7 @@ header #logo{margin:50px 0}
     #getContent .plantThumbs:first-child .plantInfo{text-align:right; width: calc(100% - 20px); position: absolute; bottom:20px; left:10px; color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0}
 
 
-    #imagesBannerMobile #mobile-leaves { position:absolute; left: -2.5%; bottom: 40%; width:105%; z-index:97}
-    #imagesBannerMobile #mobile-plantperson {position:absolute; left: 5%; bottom: 60px; width: 90%; z-index:99}
+    #imagesBannerMobile #mobile-leaves { position:absolute; left: -2.5%; bottom: 40%; width:105%; z-index:98}
+    #imagesBannerMobile #mobile-plantperson {position:absolute; left: 5%; bottom: 60px; max-width: 90%; max-height: 50%;z-index:97}
 
 }
