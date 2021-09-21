@@ -4,14 +4,111 @@
     <title>Front End Test - Greenthumb</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index.scss" />
+    <script type="text/javascript" src="api-request.js"></script>
+<!--   TIPS: Unnecessary   -->
+    <script type="text/javascript" src="animations.js"></script>
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header>
+      <div class="wrap">
+        <img id="logo" src="images/icons/logo-white.svg" alt="Greenthumb" />
+      </div>
+    </header>
+
+    <div id="banner-home">
+      <div class="wrap">
+        <div id="banner-text">
+          <h1>Find your<br />next green<br />friend</h1>
+          <!-- Animated with css -->
+          <a href="#" id="banner-arrow-down" class="bounce">
+            <img src="images/icons/arrow-down.svg" alt="Arrow Down" />
+          </a>
+        </div>
+      </div>
+      <div id="imagesBannerDesktop">
+        <img id="left-leaves" class="paralax" value="2" src="images/hero/desktop/left-leaves.png" />
+        <img id="plantperson" class="paralax" value="1" src="images/hero/desktop/plantperson.png" />
+        <img id="right-leaves" class="paralax" value="-1" src="images/hero/desktop/right-leaves.png" />
+      </div>
+      <div id="imagesBannerMobile">
+        <img id="mobile-leaves" class="paralax" value="2" src="images/hero/mobile/mobile-leaves.png" />
+        <img id="mobile-plantperson" class="paralax" value="1" src="images/hero/mobile/mobile-plantperson.png" />
+      </div>
+      
+    </div>
+
+
+    <div class="wrap flex" id="optionsBox">
+      <label>
+        <img src="images/illustrations/sun.png" alt="First step: Sun" ><br />
+        <span><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</span><br />
+        <select id="selectSun" onchange="update()">
+          <option>Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <label>
+        <img src="images/illustrations/wateringcan.png" alt="Second step: wateringcan" ><br />
+        <span><strong>2.</strong> How often do you want to <strong>water</strong> your plant?</span><br />
+        <select id="selectWater" onchange="update()">
+          <option>Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </label>
+      <label>
+        <img src="images/illustrations/dog.png" alt="Third step: Dog" ><br />
+        <span><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants? </span><br />
+        <select id="selectDog" onchange="update()">
+          <option>Select...</option>
+          <option value="false">No</option>
+          <option value="true">Yes</option>
+        </select>
+      </label>
+    </div>
+    
+    <div id="results">
+      <div class="wrap flex" id="noResults">
+        <div>
+          <h2>No results yet...</h2>
+          <p>Use the filters above to find the plant that best fits your environment :)</p>
+        </div>
+        <div id="noResultsImg">
+          <img src="images/icons/no-results.svg" alt="No Results" />
+        </div>
+      </div>
+
+      <div class="wrap" id="showResults">
+        <img src="images/illustrations/pick.png" id="iconPick" alt="Pick your plant" />
+        <h2>Our picks for you</h2>
+      
+        <!--   GET Content from API (api-request.js)   -->
+        <div id="getContent"></div>
+
+        
+        <a href="#" id="backTop">
+          <span>back to top</span>
+        </a>
+      </div>
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
   </body>
 </html>
