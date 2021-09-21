@@ -10,7 +10,7 @@ html, body {padding: 0; margin:0; }
 
 ::selection{ background: #75BC97; color:#fff}
 
-h1 {font: 700 4vw/4.3vw "Montserrat"; color:#FFF; margin:0; padding:0}
+h1 {font: 700 70px/70px "Montserrat"; color:#FFF; margin:0; padding:0}
 h2 {font: 700 45px/55px "Montserrat"; color:#A9A9A9; margin:0; padding:0}
 
 p {font: 400 16px/27px "Montserrat"; color:#A9A9A9; margin:10px 0; padding:0; max-width: 221px}
