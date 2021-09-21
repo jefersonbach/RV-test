@@ -112,7 +112,7 @@ header #logo{margin:50px 0}
 
 
 /*   Mobile   */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1280px),(min-width: 641px) {
   h1 {font: 700 40px/40px "Montserrat"; color:#FFF; margin:0; padding:0}
   #banner-home {max-height: 350px; height:50vh;}
 
