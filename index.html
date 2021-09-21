@@ -28,7 +28,7 @@
       <link rel="canonical" href="https://rv-test-8mj2tr6pr-jeff-rv-test.vercel.app/">
       <link rel="icon" href="images/favicon.png">
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <meta name="theme-color" content="#75BC97">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
       <meta name="author" content="Jeferson Bach - Red Ventures Test">
@@ -66,7 +66,12 @@
         </div>
       </div>
       <div id="imagesBannerDesktop">
-        <img id="left-leaves" class="paralax" value="2" src="images/hero/desktop/left-leaves.png" alt="Left Leaves" />
+        <picture id="left-leaves" class="paralax" value="2">
+          <source type="image/webp" srcset="images/illustrations/webp/sun.webp">
+          <source type="image/jpeg" srcset="images/illustrations/jp2/sun.jp2">
+          <img loading="lazy"  src="images/hero/desktop/left-leaves.png" alt="Left Leaves" src="images/illustrations/sun.png" alt="First step: Sun" /><br />
+        </picture>
+
         <img id="plantperson" class="paralax" value="1" src="images/hero/desktop/plantperson.png" alt="Plant Person" />
         <img id="right-leaves" class="paralax" value="-1" src="images/hero/desktop/right-leaves.png" alt="Right Leaves" />
       </div>
