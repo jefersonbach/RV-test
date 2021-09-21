@@ -1,3 +1,3 @@
-import update from './js/api-request';
+import update from 'js/api-request';
 
 update();
