@@ -35,19 +35,19 @@ function update() {
                         }
                             
                         
-                        if(sun == 'no'){
+                        if(plant.sun == 'no'){
                             sunLight = '<span style="background-image: url(images/icons/no-sun.svg)">Sun light</span>';
-                        }else if(sun == 'low'){
+                        }else if(plant.sun == 'low'){
                             sunLight = '<span style="background-image: url(images/icons/low-sun.svg)">Sun light</span>';
-                        }else if(sun == 'high'){
+                        }else if(plant.sun == 'high'){
                             sunLight = '<span style="background-image: url(images/icons/high-sun.svg)">Sun light</span>';
                         }
 
-                        if(water == 'rarely'){
+                        if(plant.water == 'rarely'){
                             waterVol = '<span style="background-image: url(images/icons/1-drop.svg)">Water vol.</span>';
-                        }else if(water == 'daily'){
+                        }else if(plant.water == 'daily'){
                             waterVol = '<span style="background-image: url(images/icons/2-drops.svg)">Water vol.</span>';
-                        }else if(water == 'regularly'){
+                        }else if(plant.water == 'regularly'){
                             waterVol = '<span style="background-image: url(images/icons/3-drops.svg)">Water vol.</span>';
                         }
 
