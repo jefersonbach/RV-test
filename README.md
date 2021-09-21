@@ -1,13 +1,13 @@
 # Red Ventures - Jeferson Bach - FrontEnd Test
 
 # CodeSandbox 
-https://5eqqy.csb.app
+https://rwbym.csb.app/
 
-https://codesandbox.io/s/red-ventures-jeferson-bach-test-5eqqy?file=/index.html
+https://codesandbox.io/s/jeferson-bach-red-ventures-test-rwbym
 
 
 # Next vercel
-https://rv-test.vercel.app
+https://csb-rwbym-7eebcqkyj-jefersonbach.vercel.app
 
 
 
