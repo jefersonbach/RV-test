@@ -127,7 +127,7 @@ header #logo{margin:50px 0}
   header #logo{margin:50px 30px}
   #banner-home{ background: #75BC97; height:100vh; min-height:100vh; position: relative; overflow: hidden;}
   .wrap{ width:100%}
-    h1 {font: 700 60px/70px "Montserrat"; color:#FFF; margin:0; padding:0}
+    h1 {font: 700 50px/50px "Montserrat"; color:#FFF; margin:0; padding:0}
     .flex { flex-direction: column;}
     #optionsBox label {  padding:30px 50px; transition: 0.2s; -webkit-transition: 0.2s;}
 
