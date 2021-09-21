@@ -36,9 +36,9 @@ header #logo{margin:50px 0}
   60% { transform: translateY(-15px); }
 }
 
-#banner-home #left-leaves { position:absolute; left: -25px; top: -25px; height: 110%;}
-#banner-home #right-leaves { position:absolute; right: -25px; top: -25px; height: 110%; }
-#banner-home #plantperson {position:absolute; left: 55%; top: 0px;height: 100%;}
+#banner-home #left-leaves, #imagesBannerMobile #left-leaves{ position:absolute; left: -25px; top: -25px; height: 110%;}
+#banner-home #right-leaves, #imagesBannerMobile #right-leaves { position:absolute; right: -25px; top: -25px; height: 110%; }
+#banner-home #plantperson, #imagesBannerMobile #plantperson {position:absolute; left: 55%; top: 0px;height: 100%;}
 
 
 
@@ -128,6 +128,7 @@ header #logo{margin:50px 0}
   #banner-home{ background: #75BC97; height:100vh; min-height:100vh; position: relative; overflow: hidden;}
   .wrap{ width:100%}
     h1 {font: 700 50px/50px "Montserrat"; color:#FFF; margin:0; padding:0}
+    h2 {font: 700 35px/40px "Montserrat"; }
     .flex { flex-direction: column;}
     #optionsBox label {  padding:30px 50px; transition: 0.2s; -webkit-transition: 0.2s;}
 
@@ -150,18 +151,18 @@ header #logo{margin:50px 0}
     
 
     #getContent .plantThumbs:first-child {flex: 1;}
-#getContent .plantThumbs:first-child .plantImg {max-height: 220px; margin:0 auto}
-#getContent .plantThumbs .plantImg {max-height: 220px; margin:0 auto}
+    #getContent .plantThumbs:first-child .plantImg {max-height: 220px; margin:0 auto}
+    #getContent .plantThumbs .plantImg {max-height: 220px; margin:0 auto}
 
-#getContent .plantThumbs:first-child .plantIcons{position: absolute; bottom:15px; right:10px; width: calc(100% - 10px);}
-#getContent .plantThumbs:first-child .plantIcons strong{float:left; margin:3px 0 0 20px; color:#1E6B4E;font: 700 16px/16px "Montserrat";}
-#getContent .plantThumbs:first-child .plantIcons span{transition: 0.2s; -webkit-transition: 0.2s; font-size:0px; line-height:20px; color:#fff; width:1px; height:20px; margin:0; padding:2px 1px 2px 27px; display: inline-block; overflow:hidden; float: right; text-align:left; background-position: center center; background-repeat: no-repeat; background-size: auto 70%}
-#getContent .plantThumbs:first-child .plantIcons span:hover{background-position: 5px center; font-size:10px; width: 60px; background-color: #75BC97; border-radius:20px;}
+    #getContent .plantThumbs:first-child .plantIcons{position: absolute; bottom:15px; right:10px; width: calc(100% - 10px);}
+    #getContent .plantThumbs:first-child .plantIcons strong{float:left; margin:3px 0 0 20px; color:#1E6B4E;font: 700 16px/16px "Montserrat";}
+    #getContent .plantThumbs:first-child .plantIcons span{transition: 0.2s; -webkit-transition: 0.2s; font-size:0px; line-height:20px; color:#fff; width:1px; height:20px; margin:0; padding:2px 1px 2px 27px; display: inline-block; overflow:hidden; float: right; text-align:left; background-position: center center; background-repeat: no-repeat; background-size: auto 70%}
+    #getContent .plantThumbs:first-child .plantIcons span:hover{background-position: 5px center; font-size:10px; width: 60px; background-color: #75BC97; border-radius:20px;}
 
-#getContent .plantThumbs:first-child .plantInfo h3 {color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0; position: absolute; bottom:25px; left:10px; width: calc(100% - 40px); margin:0; padding:0; text-align: left;}
+    #getContent .plantThumbs:first-child .plantInfo h3 {color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0; position: absolute; bottom:25px; left:10px; width: calc(100% - 40px); margin:0; padding:0; text-align: left;}
 
 
-#getContent .plantThumbs:first-child .plantInfo{text-align:right; width: calc(100% - 20px); position: absolute; bottom:20px; left:10px; color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0}
+    #getContent .plantThumbs:first-child .plantInfo{text-align:right; width: calc(100% - 20px); position: absolute; bottom:20px; left:10px; color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0}
 
 
     #imagesBannerMobile #mobile-leaves { position:absolute; left: -2.5%; top: -2.5%; width:105%; z-index:97}
