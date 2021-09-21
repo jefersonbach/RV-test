@@ -119,6 +119,13 @@ header #logo{margin:50px 0}
   #banner-home #left-leaves { right: 50%; top: -25px; height: 100%; width:auto}
   #banner-home #right-leaves { right: -25px; top: -25px; height: 102%; width:auto }
   #banner-home #plantperson {left: 45%; top: 5%; height: 90%; width:auto}
+
+  #getContent {display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 15px;  row-gap: 15px; }
+
+  /*   all Result   */
+  #getContent .plantThumbs {background: #FFF; grid-column: span 1; grid-row: span 1; padding:20px 20px 60px; border-radius:5px; max-height:205px; transition: 0.2s; -webkit-transition: 0.2s; position:relative; text-align: center;}
+  
+
 }
 
 
