@@ -6,16 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     
     <link async href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link async rel="stylesheet" href="css/index.css" />
-
     
 <!--   TIPS: Unnecessary   -->
-    <script async type="text/javascript" src="js/animations.js"></script>
- 
-
     <link rel="preload" as="style" href="css/index.css" />
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    
 
       <!--   SEO   -->
       <meta name="robots" content="all"/>
@@ -35,9 +28,7 @@
       <link rel="shortlink" href="https://rv-test.vercel.app">
 <!--   END TIPS   -->
 
-  
-    
-
+      <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
@@ -47,7 +38,7 @@
       </div>
     </header>
 
-
+<!-- Banner  -->
     <div id="banner-home">
       <div class="wrap">
         <div id="banner-text">
@@ -63,19 +54,19 @@
         <picture id="left-leaves" class="paralax" value="2">
           <source type="image/webp" srcset="images/hero/desktop/webp/left-leaves.webp">
           <source type="image/jpeg" srcset="images/hero/desktop/jp2/left-leaves.jp2">
-          <img loading="lazy" src="images/hero/desktop/left-leaves.png" alt="Left Leaves" height="550"  /><br />
+          <img loading="lazy" src="images/hero/desktop/left-leaves.png" alt="Left Leaves" height="550"  />
         </picture>
 
         <picture id="plantperson" class="paralax" value="1">
           <source type="image/webp" srcset="images/hero/desktop/webp/plantperson.webp">
           <source type="image/jpeg" srcset="images/hero/desktop/jp2/plantperson.jp2">
-          <img loading="lazy" src="images/hero/desktop/plantperson.png" alt="Plant Person" height="100%"  /><br />
+          <img loading="lazy" src="images/hero/desktop/plantperson.png" alt="Plant Person" height="100%"  />
         </picture>
 
         <picture id="right-leaves" class="paralax" value="-1">
           <source type="image/webp" srcset="images/hero/desktop/webp/right-leaves.webp">
           <source type="image/jpeg" srcset="images/hero/desktop/jp2/right-leaves.jp2">
-          <img loading="lazy" src="images/hero/desktop/right-leaves.png" alt="Right Leaves" height="103%" /><br />
+          <img loading="lazy" src="images/hero/desktop/right-leaves.png" alt="Right Leaves" height="103%" />
         </picture>
       </div>
 
@@ -83,26 +74,26 @@
         <picture id="mobile-leaves" class="paralax" value="-1">
           <source type="image/webp" srcset="images/hero/mobile/webp/mobile-leaves.webp">
           <source type="image/jpeg" srcset="images/hero/mobile/jp2/mobile-leaves.jp2">
-          <img loading="lazy" src="images/hero/mobile/mobile-leaves.png" alt="Mobile Leaves"  width="100%" /><br />
+          <img loading="lazy" src="images/hero/mobile/mobile-leaves.png" alt="Mobile Leaves"  width="100%" />
         </picture>
 
         <picture id="mobile-plantperson" class="paralax" value="1">
           <source type="image/webp" srcset="images/hero/mobile/webp/mobile-plantperson.webp">
           <source type="image/jpeg" srcset="images/hero/mobile/jp2/mobile-plantperson.jp2">
-          <img loading="lazy" src="images/hero/mobile/mobile-plantperson.png" alt="Plantperson"  width="90%" /><br />
+          <img loading="lazy" src="images/hero/mobile/mobile-plantperson.png" alt="Plantperson"  width="90%" />
         </picture>
       </div>
     </div>
 
 
-
+<!-- options box  -->
     <div class="wrap flex" id="optionsBox">
       <label>
         <picture>
           <source type="image/webp" srcset="images/illustrations/webp/sun.webp">
           <source type="image/jpeg" srcset="images/illustrations/jp2/sun.jp2">
-          <img loading="lazy" src="images/illustrations/sun.png" alt="First step: Sun" /><br />
-        </picture>
+          <img loading="lazy" src="images/illustrations/sun.png" alt="First step: Sun" />
+        </picture><br />
         <span><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</span><br />
         <select id="selectSun" onChange="update()">
           <option>Select...</option>
@@ -140,7 +131,7 @@
       </label>
     </div>
     
-
+<!-- Load results  -->
     <div id="results">
       <div class="wrap flex" id="noResults">
         <div>
@@ -156,7 +147,7 @@
         <img src="images/illustrations/pick.png" id="iconPick" alt="Pick your plant" />
         <h2>Our picks for you</h2>
       
-        <!--   GET Content from API (api-request.js)   -->
+<!--   GET Content from API (api-request.js)   -->
         <div id="getContent"></div>
         
         <a href="#" id="backTop">
@@ -170,6 +161,18 @@
 
 <!-- API CALL  -->
 <script type="text/javascript">
+  document.addEventListener("mousemove", parallax);
+  function parallax(event) {
+    this.querySelectorAll(".paralax").forEach((shift) => {
+      const position = shift.getAttribute("value");
+      const x = (window.innerWidth - event.pageX * position) / 90;
+      const y = (window.innerHeight - event.pageY * position) / 90;
+
+      shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  }
+
+
   function update() {
       var sun = document.getElementById('selectSun').value;
       var water = document.getElementById('selectWater').value;
