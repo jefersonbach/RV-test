@@ -66,10 +66,10 @@ function update() {
                                     <div class="control"></div> \
                                 </div> \
                         </div>' );
-                    })
-                    
+                    });
+                    return true;
                 } else {
-                    console.log('error')
+                    return false;
                 }
             }
 
