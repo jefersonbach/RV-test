@@ -112,18 +112,18 @@ header #logo{margin:50px 0}
 
 
 /*   Mobile   */
-@media only screen and (max-width: 1280px),(min-width: 641px) {
+@media only screen and (max-width: 1280px) {
   h1 {font: 700 40px/40px "Montserrat"; color:#FFF; margin:0; padding:0}
   #banner-home {max-height: 350px; height:50vh;}
 
   #banner-home #left-leaves { right: 50%; top: -25px; height: 100%; width:auto}
-  #banner-home #right-leaves { right: -125px; top: -25px; height: 100%; width:auto }
+  #banner-home #right-leaves { right: -25px; top: -25px; height: 100%; width:auto }
   #banner-home #plantperson {left: 50%; top: 0px; height: 90%; width:auto}
 }
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 670px) {
   header #logo{margin:50px 30px}
   #banner-home{ background: #75BC97; height:100vh; min-height:100vh; position: relative; overflow: hidden;}
   .wrap{ width:100%}
