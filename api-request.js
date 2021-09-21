@@ -1,20 +1,12 @@
-window.addEventListener('error', function(e){
-    const {error} = e;
-    if (!error.captured) {
-      error.captured = true;
-      e.stopImmediatePropagation();
-      e.preventDefault();
-      // Revisit this error after the error boundary element processed it 
-      setTimeout(()=>{
-        // can be set by the error boundary error handler
-        if (!error.shouldIgnore) {
-          // but if it wasn't caught by a boundary, release it back to the wild
-          throw error;
-        }
-      })
-    }
-  });
-
+function isAccessedVarChanged(cacheData) { 
+    for (let key in cacheData.env) { 
+      if (cacheData.env[key] !== process.env[key]) { 
+        return true; 
+      } 
+    } 
+   
+    return false; 
+  } 
 function update() {
     var sun = document.getElementById('selectSun').value;
     var water = document.getElementById('selectWater').value;
