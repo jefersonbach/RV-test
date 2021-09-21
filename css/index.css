@@ -101,7 +101,7 @@ header #logo{margin:50px 0}
 #imagesBannerMobile{display: none;}
 #imagesBannerDesktop{display: block;}
 
-#backTop{ transition: 0.2s; -webkit-transition: 0.2s; font:300 16px/16px "Montserrat"; color:#196146; padding:5px; text-align: center; display:block; border: 1px solid #15573F; box-sizing: border-box; border-radius: 25px; text-decoration:none; margin:40px 0}
+#backTop{ transition: 0.2s; -webkit-transition: 0.2s; font:300 16px/16px "Montserrat"; color:#196146; padding:5px; text-align: center; display:block; border: 1px solid #15573F; box-sizing: border-box; border-radius: 25px; text-decoration:none; margin:40px}
 #backTop span{ background: url(images/icons/arrow-up.svg) left center no-repeat; padding:10px 0 10px 30px; display: inline-block;}
 #backTop:hover {background:#75BC97}
 
@@ -137,7 +137,7 @@ header #logo{margin:50px 0}
 
     #results {background: #f2f2f2; padding:90px 0 90px;  }
     #showResults{width:100%}
-    #showResults h2 {font: 700 35px/35px "Montserrat"; max-width:100%; margin:0 0 0 5px}
+    #showResults h2 {font: 700 35px/35px "Montserrat"; max-width: calc(100% - 20px); margin:0 0 0 20px}
 
     #imagesBannerMobile{display: block;}
     #imagesBannerDesktop{display: none;}
