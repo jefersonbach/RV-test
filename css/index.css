@@ -27,7 +27,7 @@ header #logo{margin:50px 0}
 /*   First banner   */
 #banner-home{ background: #75BC97; max-height: 500px; height:50vh; position: relative; overflow: hidden;}
 #banner-home .wrap #banner-text{ position:absolute; top:124px; z-index:99; margin:0; padding:0}
-#banner-home .wrap #banner-text #banner-arrow-down {margin:50px 0 0; display:inline-block}
+#banner-home .wrap #banner-text #banner-arrow-down {margin:30px 0 0; display:inline-block}
 
 .bounce { -moz-animation: bounce 2s infinite; -webkit-animation: bounce 2s infinite; animation: bounce 2s infinite; }
 @keyframes bounce {
