@@ -67,7 +67,7 @@ function update() {
                                 </div> \
                         </div>' );
                     });
-                    return true;
+                    
                 } else {
                     return false;
                 }
@@ -77,6 +77,7 @@ function update() {
             request.send();
             document.getElementById('showResults').style.display = 'block';
             document.getElementById('results').scrollIntoView({block: "end", behavior: "smooth"});
+            return true;
     }
     
 }
