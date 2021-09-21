@@ -10,7 +10,7 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "https://rv-test-8mj2tr6pr-jeff-rv-test.vercel.app/",
+  "start_url": "https://rv-test.vercel.app",
   "background_color": "#75BC97",
   "display": "standalone",
   "scope": "/",
