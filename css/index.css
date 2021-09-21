@@ -38,7 +38,7 @@ header #logo{margin:50px 0}
 
 #banner-home #left-leaves, #imagesBannerMobile #left-leaves{ position:absolute; left: -25px; top: -25px; height: 100%; width: auto}
 #banner-home #right-leaves, #imagesBannerMobile #right-leaves { position:absolute; right: -25px; top: -25px; height: 100%; width: auto}
-#banner-home #plantperson, #imagesBannerMobile #plantperson {position:absolute; left: 55%; top: 0px; max-height: 328px; height:80%; width: auto}
+#banner-home #plantperson, #imagesBannerMobile #plantperson {position:absolute; left: 55%; top: 0px; max-height: 428px; height:80%; width: auto}
 
 
 
@@ -118,7 +118,7 @@ header #logo{margin:50px 0}
 
   #banner-home #left-leaves { left: -340px; top: -25px; height: 100%;}
   #banner-home #right-leaves { right: -125px; top: -25px; height: 100%; }
-  #banner-home #plantperson {left: 50%; top: 0px;max-height: 428px;}
+  #banner-home #plantperson {left: 50%; top: 0px;max-height: 328px;}
 }
 
 
