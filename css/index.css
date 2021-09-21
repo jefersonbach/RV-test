@@ -36,7 +36,7 @@ header #logo{margin:50px 0}
   60% { transform: translateY(-15px); }
 }
 
-#banner-home #left-leaves, #imagesBannerMobile #left-leaves{ position:absolute; left: -2%; top: 0; height: 100%; width: auto; transform: scale(1.2);}
+#banner-home #left-leaves, #imagesBannerMobile #left-leaves{ position:absolute; left: -2%; top: -25px; height: 100%; width: auto; }
 #banner-home #right-leaves, #imagesBannerMobile #right-leaves { position:absolute; right: -25px; top: -25px; height: 105%; width: auto}
 #banner-home #plantperson, #imagesBannerMobile #plantperson {position:absolute; left: 60%; top: 0px;  height:100%; width: auto}
 
