@@ -4,13 +4,7 @@
   "description": "Plants information",
   "icons": [
     {
-      "src": "images/logo.png",
-      "type": "image/png",
-      "sizes": "185x89",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "images/logo.png",
+      "src": "images/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
