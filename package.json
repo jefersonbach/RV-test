@@ -1,7 +1,8 @@
 {
-  "name": "front-end-test-2",
+  "short_name": "Green Thumb - Front-end Test",
+  "name": "Green Thumb: Do I need a plant?",
+  "description": "Plants information",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open"
@@ -12,5 +13,17 @@
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "icons": [
+    {
+      "src": "images/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "https://rv-test.vercel.app",
+  "background_color": "#75BC97",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#75BC97"
 }

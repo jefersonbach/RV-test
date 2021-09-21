@@ -1,7 +1,18 @@
 {
-  "short_name": "Green Thumb",
+  "short_name": "Green Thumb - Front-end Test",
   "name": "Green Thumb: Do I need a plant?",
   "description": "Plants information",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "parcel": "1.12.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
   "icons": [
     {
       "src": "images/android-chrome-512x512.png",
