@@ -1,5 +1,5 @@
 
-function update() {
+export function update() {
     var sun = document.getElementById('selectSun').value;
     var water = document.getElementById('selectWater').value;
     var dog = document.getElementById('selectDog').value;
