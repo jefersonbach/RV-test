@@ -1,3 +1,4 @@
+var update;
 function update() {
     var sun = document.getElementById('selectSun').value;
     var water = document.getElementById('selectWater').value;
