@@ -141,7 +141,6 @@ header #logo{margin:50px 0}
     #imagesBannerDesktop{display: none;}
     #banner-home .wrap #banner-text{ top:114px; z-index:99; left:30px; margin:0; padding:0}
 
-    #results #showResults { overflow-x: scroll;}
     #getContent {display:flex;align-items: left; gap: 20px; justify-content: left; flex-wrap: nowrap; align-self: flex-start; flex-direction:row; overflow-x: auto; padding:20px 30px}
 
     #getContent .plantThumbs {background: #FFF; flex: 1 0 80%; min-width:220px;  min-height: 285px; padding:20px; border-radius:5px; transition: 0.2s; -webkit-transition: 0.2s;}
