@@ -81,5 +81,5 @@ function update() {
     
 }
 
-update();
+//update();
 
