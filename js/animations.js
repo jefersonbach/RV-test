@@ -1,5 +1,5 @@
 document.addEventListener("mousemove", parallax);
-function parallax(event) {
+export function parallax(event) {
   this.querySelectorAll(".paralax").forEach((shift) => {
     const position = shift.getAttribute("value");
     const x = (window.innerWidth - event.pageX * position) / 90;
