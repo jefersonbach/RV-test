@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <link  rel="preload" href="css/index.css" />
+    <meta name="robots" content="all"/>
     <title>Jeff Bach Front End Test - Greenthumb</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,13 +31,13 @@
         </div>
       </div>
       <div id="imagesBannerDesktop">
-        <img id="left-leaves" class="paralax" value="2" src="images/hero/desktop/left-leaves.png" />
-        <img id="plantperson" class="paralax" value="1" src="images/hero/desktop/plantperson.png" />
-        <img id="right-leaves" class="paralax" value="-1" src="images/hero/desktop/right-leaves.png" />
+        <img id="left-leaves" class="paralax" value="2" src="images/hero/desktop/left-leaves.png" alt="Left Leaves" />
+        <img id="plantperson" class="paralax" value="1" src="images/hero/desktop/plantperson.png" alt="Plant Person" />
+        <img id="right-leaves" class="paralax" value="-1" src="images/hero/desktop/right-leaves.png" alt="Right Leaves" />
       </div>
       <div id="imagesBannerMobile">
-        <img id="mobile-leaves" class="paralax" value="2" src="images/hero/mobile/mobile-leaves.png" />
-        <img id="mobile-plantperson" class="paralax" value="1" src="images/hero/mobile/mobile-plantperson.png" />
+        <img id="mobile-leaves" class="paralax" value="2" src="images/hero/mobile/mobile-leaves.png" alt="Left Leaves" />
+        <img id="mobile-plantperson" class="paralax" value="1" src="images/hero/mobile/mobile-plantperson.png" alt="Right Leaves" />
       </div>
       
     </div>
@@ -44,7 +45,11 @@
 
     <div class="wrap flex" id="optionsBox">
       <label>
-        <img src="images/illustrations/sun.png" alt="First step: Sun" ><br />
+        <picture>
+          <!--<source type="image/webp" srcset="/assets/images/ad-side.webp">
+          <source type="image/jpeg" srcset="/assets/images/ad-side.jp2">-->
+          <img loading="lazy" src="images/illustrations/sun.png" alt="First step: Sun" /><br />
+        </picture>
         <span><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</span><br />
         <select id="selectSun" onchange="update()">
           <option>Select...</option>
