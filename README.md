@@ -1,4 +1,3 @@
-# Red Ventures-test
-# Jeferson Bach
+# Red Ventures - Jeferson Bach - Test
 
 <img src="lighthouse.png" />
