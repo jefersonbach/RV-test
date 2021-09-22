@@ -10,7 +10,7 @@ html, body {padding: 0; margin:0; }
 
 ::selection{ background: #75BC97; color:#fff}
 
-h1 {font: 700 4vw/4.3vw "Montserrat"; color:#FFF; margin:0; padding:0}
+h1 {font: 700 70px/70px "Montserrat"; color:#FFF; margin:0; padding:0}
 h2 {font: 700 45px/55px "Montserrat"; color:#A9A9A9; margin:0; padding:0}
 
 p {font: 400 16px/27px "Montserrat"; color:#A9A9A9; margin:10px 0; padding:0; max-width: 221px}
@@ -27,7 +27,7 @@ header #logo{margin:50px 0}
 /*   First banner   */
 #banner-home{ background: #75BC97; max-height: 500px; height:50vh; position: relative; overflow: hidden;}
 #banner-home .wrap #banner-text{ position:absolute; top:124px; z-index:99; margin:0; padding:0}
-#banner-home .wrap #banner-text #banner-arrow-down {margin:50px 0 0; display:inline-block}
+#banner-home .wrap #banner-text #banner-arrow-down {margin:30px 0 0; display:inline-block}
 
 .bounce { -moz-animation: bounce 2s infinite; -webkit-animation: bounce 2s infinite; animation: bounce 2s infinite; }
 @keyframes bounce {
@@ -36,9 +36,9 @@ header #logo{margin:50px 0}
   60% { transform: translateY(-15px); }
 }
 
-#banner-home #left-leaves { position:absolute; left: -25px; top: -25px; height: 110%;}
-#banner-home #right-leaves { position:absolute;  right: auto; left:70%; top: -25px; height: 110%; width: 30vw }
-#banner-home #plantperson {position:absolute; left: 55%; top: 0px;height: 100%;}
+#banner-home #left-leaves, #imagesBannerMobile #left-leaves{ position:absolute; left: -2%; top: -2%; height: 105%; width: 70vw; }
+#banner-home #right-leaves, #imagesBannerMobile #right-leaves { position:absolute; right: auto; left:78%;  top: -2%; height: 105%; width: 30vw}
+#banner-home #plantperson, #imagesBannerMobile #plantperson {position:absolute; left: 60%; top: 0px;  height:100%; width: auto}
 
 
 
@@ -101,7 +101,7 @@ header #logo{margin:50px 0}
 #imagesBannerMobile{display: none;}
 #imagesBannerDesktop{display: block;}
 
-#backTop{ transition: 0.2s; -webkit-transition: 0.2s; font:300 16px/16px "Montserrat"; color:#196146; padding:5px; text-align: center; display:block; border: 1px solid #15573F; box-sizing: border-box; border-radius: 25px; text-decoration:none; margin:40px 0}
+#backTop{ transition: 0.2s; -webkit-transition: 0.2s; font:300 16px/16px "Montserrat"; color:#196146; padding:5px; text-align: center; display:block; border: 1px solid #15573F; box-sizing: border-box; border-radius: 25px; text-decoration:none; margin:40px}
 #backTop span{ background: url(images/icons/arrow-up.svg) left center no-repeat; padding:10px 0 10px 30px; display: inline-block;}
 #backTop:hover {background:#75BC97}
 
@@ -112,59 +112,61 @@ header #logo{margin:50px 0}
 
 
 /*   Mobile   */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1280px) {
   h1 {font: 700 40px/40px "Montserrat"; color:#FFF; margin:0; padding:0}
   #banner-home {max-height: 350px; height:50vh;}
 
-  #banner-home #left-leaves { left: -240px; top: -25px; height: 110%; width: 40vw}
-  #banner-home #right-leaves { right: auto; left:70%; top: -25px; height: 110%; width: 30vw }
-  #banner-home #plantperson {left: 50%; top: 0px;height: 100%;}
+  #banner-home #left-leaves { right: 43%; top: -5%; height: 105%; width:90vw; left:auto; }
+  #banner-home #right-leaves { right: auto; top: -5%; height: 105%; width:40vw; left:80%;  }
+  #banner-home #plantperson {left: 55%; top: 5%; height: 90%; width:auto}
+
+  #getContent {display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 15px;  row-gap: 15px; }
+
+  /*   all Result   */
+  #getContent .plantThumbs {background: #FFF; grid-column: span 1; grid-row: span 1; padding:20px 20px 60px; border-radius:5px; max-height:205px; transition: 0.2s; -webkit-transition: 0.2s; position:relative; text-align: center;}
+  
+
 }
 
 
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 670px) {
   header #logo{margin:50px 30px}
   #banner-home{ background: #75BC97; height:100vh; min-height:100vh; position: relative; overflow: hidden;}
   .wrap{ width:100%}
-    h1 {font: 700 60px/70px "Montserrat"; color:#FFF; margin:0; padding:0}
+    h1 {font: 700 50px/50px "Montserrat"; color:#FFF; margin:0; padding:0}
+    
     .flex { flex-direction: column;}
-    #optionsBox label {  padding:30px 50px; transition: 0.2s; -webkit-transition: 0.2s;}
 
-    #results {background: #f2f2f2; padding:90px 0 90px;  }
-    #showResults{width:90%}
+    #optionsBox label {  padding:30px 50px; transition: 0.2s; -webkit-transition: 0.2s;}
     #optionsBox label span {color: #848484; font: 300 19px/24px "Montserrat"; width: 100%; display:inline-block}
     #optionsBox label select {width: 95%;}
+
+    #results {background: #f2f2f2; padding:90px 0 90px;  }
+    #showResults{width:100%}
+    #showResults h2 {font: 700 35px/35px "Montserrat"; max-width: calc(100% - 20px); margin:0 0 0 20px}
 
     #imagesBannerMobile{display: block;}
     #imagesBannerDesktop{display: none;}
     #banner-home .wrap #banner-text{ top:114px; z-index:99; left:30px; margin:0; padding:0}
 
-    #results #showResults { overflow-x: scroll;}
-    #getContent {display:flex;align-items: left; gap: 20px; justify-content: left; flex-wrap: nowrap; align-self: flex-start; flex-direction:row; overflow-x: auto; padding:20px 30px}
-
-    #getContent .plantThumbs {background: #FFF; flex: 1 0 80%; min-width:220px;  min-height: 285px; padding:20px; border-radius:5px; transition: 0.2s; -webkit-transition: 0.2s;}
-
+    #getContent {display:flex;align-items: left; gap: 10px; justify-content: left; flex-wrap: nowrap; align-self: flex-start; flex-direction:row; overflow-x: auto; padding:20px 30px}
+    #getContent .plantThumbs {background: #FFF; flex: 1 0 80%; min-width:220px;  min-height: 305px; padding:20px; border-radius:5px; transition: 0.2s; -webkit-transition: 0.2s;}
     #getContent .plantThumbs:hover {transform: scale(1.04); cursor: pointer; box-shadow:none}
+    #getContent .plantThumbs .plantImg {max-height: 260px; max-width: 180px; margin:0 auto; }
     #getContent .plantThumbs .plantInfo .plantIcons{position: absolute; bottom:0px; right:0px; width: 100%; height:30px}
-    
 
     #getContent .plantThumbs:first-child {flex: 1;}
-#getContent .plantThumbs:first-child img {max-height: 220px; margin:0 auto}
-#getContent .plantThumbs .plantImg {max-height: 220px; margin:0 auto}
-
-#getContent .plantThumbs:first-child .plantIcons{position: absolute; bottom:15px; right:10px; width: calc(100% - 10px);}
-#getContent .plantThumbs:first-child .plantIcons strong{float:left; margin:3px 0 0 20px; color:#1E6B4E;font: 700 16px/16px "Montserrat";}
-#getContent .plantThumbs:first-child .plantIcons span{transition: 0.2s; -webkit-transition: 0.2s; font-size:0px; line-height:20px; color:#fff; width:1px; height:20px; margin:0; padding:2px 1px 2px 27px; display: inline-block; overflow:hidden; float: right; text-align:left; background-position: center center; background-repeat: no-repeat; background-size: auto 70%}
-#getContent .plantThumbs:first-child .plantIcons span:hover{background-position: 5px center; font-size:10px; width: 60px; background-color: #75BC97; border-radius:20px;}
-
-#getContent .plantThumbs:first-child .plantInfo h3 {color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0; position: absolute; bottom:25px; left:10px; width: calc(100% - 40px); margin:0; padding:0; text-align: left;}
+    #getContent .plantThumbs:first-child .plantImg {max-height: 260px; max-width: 220px; margin:0 auto}
+    #getContent .plantThumbs:first-child .plantIcons{position: absolute; bottom:15px; right:10px; width: calc(100% - 10px);}
+    #getContent .plantThumbs:first-child .plantIcons strong{float:left; margin:3px 0 0 20px; color:#1E6B4E;font: 700 16px/16px "Montserrat";}
+    #getContent .plantThumbs:first-child .plantIcons span{transition: 0.2s; -webkit-transition: 0.2s; font-size:0px; line-height:20px; color:#fff; width:1px; height:20px; margin:0; padding:2px 1px 2px 27px; display: inline-block; overflow:hidden; float: right; text-align:left; background-position: center center; background-repeat: no-repeat; background-size: auto 70%}
+    #getContent .plantThumbs:first-child .plantIcons span:hover{background-position: 5px center; font-size:10px; width: 60px; background-color: #75BC97; border-radius:20px;}
+    #getContent .plantThumbs:first-child .plantInfo h3 {color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0; position: absolute; bottom:25px; left:10px; width: calc(100% - 40px); margin:0; padding:0; text-align: left;}
+    #getContent .plantThumbs:first-child .plantInfo{text-align:right; width: calc(100% - 20px); position: absolute; bottom:20px; left:10px; color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0}
 
 
-#getContent .plantThumbs:first-child .plantInfo{text-align:right; width: calc(100% - 20px); position: absolute; bottom:20px; left:10px; color:#1E6B4E; font: 700 16px/16px "Montserrat"; margin:0; padding:0}
-
-
-    #imagesBannerMobile #mobile-leaves { position:absolute; left: -2.5%; top: -2.5%; width:105%; z-index:97}
-    #imagesBannerMobile #mobile-plantperson {position:absolute; left: 5%; bottom: 40px; width: 90%;}
+    #imagesBannerMobile #mobile-leaves { position:absolute; left: -2.5%; bottom: 40%; width:105%; z-index:98}
+    #imagesBannerMobile #mobile-plantperson {position:absolute; left: 5%; bottom: 60px; max-width: 90%; max-height: 50%;z-index:97}
 
 }
