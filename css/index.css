@@ -116,8 +116,8 @@ header #logo{margin:50px 0}
   h1 {font: 700 40px/40px "Montserrat"; color:#FFF; margin:0; padding:0}
   #banner-home {max-height: 350px; height:50vh;}
 
-  #banner-home #left-leaves { right: 50%; top: -25px; min-height: 105%; width:50vw; left:auto}
-  #banner-home #right-leaves { right: -2%; top: -25px; height: 102%; width:20vw; left:auto }
+  #banner-home #left-leaves { right: 50%; top: -2%; min-height: 105%; width:80vw; left:auto}
+  #banner-home #right-leaves { right: -2%; top: -2%; height: 102%; width:20vw; left:auto }
   #banner-home #plantperson {left: 45%; top: 5%; height: 90%; width:auto}
 
   #getContent {display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 15px;  row-gap: 15px; }
