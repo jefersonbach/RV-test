@@ -7,7 +7,7 @@ https://codesandbox.io/s/jeferson-bach-red-ventures-test-rwbym
 
 
 # Next vercel
-https://test-rv.vercel.app
+https://rv-test.vercel.app
 
 
 
