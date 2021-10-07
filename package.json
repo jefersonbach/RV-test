@@ -13,10 +13,7 @@
   "scripts": {
     "start": "parcel index.html --open"
   },
-  "styles": [
-    "/css/index.scss",
-    "../node_modules/bootstrap/dist/css/bootstrap.css"
-  ],
+  "styles": ["index.scss"],
   "dependencies": {
     "parcel": "1.12.4"
   },
